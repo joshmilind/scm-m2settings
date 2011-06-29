@@ -1,0 +1,9 @@
+* text=auto !eol
+tcga/annotations/settings.xml -text
+tcga/common-web/settings.xml -text
+tcga/dam/settings.xml -text
+tcga/datareports/settings.xml -text
+tcga/qclive-test-data-generator/settings.xml -text
+tcga/qclive/settings.xml -text
+tcga/tcga-common/settings.xml -text
+tcga/uuid/settings.xml -text
