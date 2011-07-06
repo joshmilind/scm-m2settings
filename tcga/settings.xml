@@ -31,6 +31,29 @@
         </pluginRepository>
       </pluginRepositories>
     </profile>
+    <profile>
+        <id>tcga-qa</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+            <property>
+                <name>env</name>
+                <value>qa</value>
+            </property>
+        </activation>
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://central</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <updatePolicy>never</updatePolicy>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
   </profiles>
   <activeProfiles>
     <!-- make the profile active all the time -->
