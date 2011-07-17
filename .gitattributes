@@ -1,2 +1,3 @@
 * text=auto !eol
+nciscm/settings.xml -text
 tcga/settings.xml -text
