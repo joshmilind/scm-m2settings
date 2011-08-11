@@ -54,6 +54,52 @@
             </repository>
         </repositories>
     </profile>
+    <profile>
+        <id>tcga-stage</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+            <property>
+                <name>env</name>
+                <value>stage</value>
+            </property>
+        </activation>
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://central</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <updatePolicy>never</updatePolicy>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
+    <profile>
+        <id>tcga-prod</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+            <property>
+                <name>env</name>
+                <value>prod</value>
+            </property>
+        </activation>
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://central</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <updatePolicy>never</updatePolicy>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
   </profiles>
   <activeProfiles>
     <!-- make the profile active all the time -->
