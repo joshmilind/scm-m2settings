@@ -43,25 +43,25 @@
   </pluginGroups>
 
    <servers> 
-    <server> 
+       <server> 
       <id>releases</id> 
       <username>deployment</username> 
-      <password>{TYDGGFTzSPwHyckxnKcb6b/6L+6Nz3dGOuEhw1PC3cM=}</password> 
+     <password>{xUz3HzafvhgHipUnTFqtzRh92R7AGz/H26uLrb8Bk0g=}</password> 
     </server> 
     <server> 
       <id>snapshots</id> 
       <username>deployment</username> 
-      <password>{TYDGGFTzSPwHyckxnKcb6b/6L+6Nz3dGOuEhw1PC3cM=}</password> 
+      <password>{xUz3HzafvhgHipUnTFqtzRh92R7AGz/H26uLrb8Bk0g=}</password> 
     </server> 
-    <server> 
-      <id>sites</id> 
-      <username>deployment</username> 
-      <password>{TYDGGFTzSPwHyckxnKcb6b/6L+6Nz3dGOuEhw1PC3cM=}</password> 
-    </server> 
+    <server>
+      <id>sites</id>
+      <username>deployment</username>
+      <password>{xUz3HzafvhgHipUnTFqtzRh92R7AGz/H26uLrb8Bk0g=}</password>
+    </server>
     <server>
       <id>ncisvn.nci.nih.gov</id>
       <username>nciscm</username>
-      <password>{TYDGGFTzSPwHyckxnKcb6b/6L+6Nz3dGOuEhw1PC3cM=}</password> 
+      <password>{unV7mLCpx6sH3b2B3kk3kvN8XuzIduut+Zw9gvzITaY=}</password>
     </server>
    </servers> 
 
