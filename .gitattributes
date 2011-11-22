@@ -1,3 +1,4 @@
 * text=auto !eol
+coppa/settings.xml -text
 nciscm/settings.xml -text
 tcga/settings.xml -text
