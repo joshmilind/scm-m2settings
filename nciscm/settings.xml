@@ -33,8 +33,9 @@
     </profile>
     <profile>
       <id>prod</id>
-      <!-- change the local repository -->
-      <localRepository>/local/home/anthill/.m2/prod_repository</localRepository>
+       <repositories>
+         <localRepository>/local/home/anthill/.m2/prod_repository</localRepository>
+       </repositories>
     </profile>
   </profiles>
   <activeProfiles>
