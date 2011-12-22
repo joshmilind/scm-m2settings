@@ -32,6 +32,29 @@
       </pluginRepositories>
     </profile>
     <profile>
+        <id>tcga-prototype</id>
+        <activation>
+            <activeByDefault>false</activeByDefault>
+            <property>
+                <name>env</name>
+                <value>prototype</value>
+            </property>
+        </activation>
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://central</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <updatePolicy>never</updatePolicy>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
+    <profile>
         <id>tcga-qa</id>
         <activation>
             <activeByDefault>false</activeByDefault>
