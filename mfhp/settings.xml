@@ -12,21 +12,19 @@
   <profiles>
     <profile>
       <id>nexus</id>
-
       <properties>
-     	<jboss.home>/Applications/jboss-5.1.0.GA</jboss.home>
-     	<jboss.configuration>drc</jboss.configuration>
-     	<log.level.fhh>WARN</log.level.fhh>
-     	<log.level.default>WARN</log.level.default>
-     	<mshv.keystore.filename>/Users/path/to/keystore-demo</mshv.keystore.filename>
-     	<mshv.app.id>a966f790-2e79-49ce-b06b-1de714a957a8</mshv.app.id>
-     	<test.mshv.user.email>FHH.tester.ci@gmail.com</test.mshv.user.email>
-     	<test.mshv.user.pw>fhht3sterci</test.mshv.user.pw>
-     	<test.mshv.user.display.name>fhh testerci</test.mshv.user.display.name>
+        <jboss.home>/Applications/jboss-5.1.0.GA</jboss.home>
+        <jboss.configuration>drc</jboss.configuration>
+        <log.level.fhh>WARN</log.level.fhh>
+        <log.level.default>WARN</log.level.default>
+        <mshv.keystore.filename>/Users/path/to/keystore-demo</mshv.keystore.filename>
+        <mshv.app.id>a966f790-2e79-49ce-b06b-1de714a957a8</mshv.app.id>
+        <test.mshv.user.email>FHH.tester.ci@gmail.com</test.mshv.user.email>
+        <test.mshv.user.pw>fhht3sterci</test.mshv.user.pw>
+        <test.mshv.user.display.name>fhh testerci</test.mshv.user.display.name>
       </properties>
 
       <!-- Enable snapshots for the built in central repo to direct -->
-      <!-- all requests to nexus via the mirror -->
       <!-- all requests to nexus via the mirror -->
       <repositories>
         <repository>
@@ -34,9 +32,9 @@
           <url>http://central</url>
           <releases><enabled>true</enabled></releases>
           <snapshots><enabled>true</enabled></snapshots>
-        </repository>
+          </repository>
       </repositories>
-     <pluginRepositories>
+      <pluginRepositories>
         <pluginRepository>
           <id>central</id>
           <url>http://central</url>
@@ -45,18 +43,18 @@
         </pluginRepository>
       </pluginRepositories>
     </profile>
-            <profile>
-            <id>quick</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <cobertura.check.haltOnFailure>false</cobertura.check.haltOnFailure>
-                <skipTests>true</skipTests>
-                <checkstyle.skip>true</checkstyle.skip>
-                <pmd.skip>true</pmd.skip>
-            </properties>
-        </profile>
+  <profile>
+      <id>quick</id>
+      <activation>
+        <activeByDefault>false</activeByDefault>
+      </activation>
+      <properties>
+        <cobertura.check.haltOnFailure>false</cobertura.check.haltOnFailure>
+        <skipTests>true</skipTests>
+        <checkstyle.skip>true</checkstyle.skip>
+        <pmd.skip>true</pmd.skip>
+      </properties>
+    </profile>
   </profiles>
   
   <activeProfiles>
@@ -66,14 +64,14 @@
 
   <pluginGroups>
     <!-- define the sonatype plugin group, so the nexus plugins will work without typing the groupId -->
-        <pluginGroup>org.sonatype.plugins</pluginGroup>
+    <pluginGroup>org.sonatype.plugins</pluginGroup>
   </pluginGroups>
 
-   <servers>
-       <server>
+  <servers>
+    <server>
       <id>releases</id>
       <username>deployment</username>
-     <password>{xUz3HzafvhgHipUnTFqtzRh92R7AGz/H26uLrb8Bk0g=}</password>
+      <password>{xUz3HzafvhgHipUnTFqtzRh92R7AGz/H26uLrb8Bk0g=}</password>
     </server>
     <server>
       <id>snapshots</id>
@@ -90,5 +88,5 @@
       <username>nciscm</username>
       <password>{unV7mLCpx6sH3b2B3kk3kvN8XuzIduut+Zw9gvzITaY=}</password>
     </server>
-   </servers>
+  </servers>
 </settings>
