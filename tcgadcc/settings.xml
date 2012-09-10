@@ -50,6 +50,7 @@
             <jboss.server.name></jboss.server.name>
             <appserver.lib.dir>${jboss.home}/server/${jboss.server.name}/lib</appserver.lib.dir>
             <appserver.deploy.dir>${jboss.home}/server/${jboss.server.name}/deploy</appserver.deploy.dir>
+	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
             </properties>
         <repositories>
             <repository>
