@@ -52,7 +52,7 @@
             <appserver.lib.dir>${user.home}/tcgadcclib</appserver.lib.dir>
             <appserver.deploy.dir>${user.home}/tcgadcclib</appserver.deploy.dir>
 	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
-	    <database.connection.url>${db.connection.url}</database.connection.url>
+	    <database.connection.url>jdbc:oracle:thin:@ncidb-tcga-d.nci.nih.gov:1653:tcgadev2</database.connection.url>
                 <!-- Database :: Quartz Schema Properties -->
                 <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
                 <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
