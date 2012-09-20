@@ -49,9 +49,18 @@
             <jboss.home></jboss.home>
             <jboss.server.name>localhost</jboss.server.name>
 	    <!-- lets tell mvn to copy dependencies to the target folder -->
-            <appserver.lib.dir>tcgadcclib</appserver.lib.dir>
-            <appserver.deploy.dir>tcgadcclib</appserver.deploy.dir>
+            <appserver.lib.dir>${user.home}/tcgadcclib</appserver.lib.dir>
+            <appserver.deploy.dir>${user.home}/tcgadcclib</appserver.deploy.dir>
 	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
+                <!-- Database :: Quartz Schema Properties -->
+                <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
+                <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
+                <database.quartz.schema.password>${database.quartz.schema.password}</database.quartz.schema.password>
+    
+                <!-- Database :: Common Schema Properties -->
+                <database.common.schema.defaultSchemaName>${database.common.schema.defaultSchemaName}</database.common.schema.defaultSchemaName>
+                <database.common.schema.username>${database.common.schema.username}</database.common.schema.username>
+                <database.common.schema.password>${database.common.schema.password}</database.common.schema.password>
             </properties>
         <repositories>
             <repository>
