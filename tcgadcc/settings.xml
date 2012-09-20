@@ -49,8 +49,8 @@
             <jboss.home></jboss.home>
             <jboss.server.name>localhost</jboss.server.name>
 	    <!-- lets tell mvn to copy dependencies to the target folder -->
-            <appserver.lib.dir>/tmp/tcgadcclib</appserver.lib.dir>
-            <appserver.deploy.dir>/tmp/tcgadcclib</appserver.deploy.dir>
+            <appserver.lib.dir>tcgadcclib</appserver.lib.dir>
+            <appserver.deploy.dir>tcgadcclib</appserver.deploy.dir>
 	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
             </properties>
         <repositories>
