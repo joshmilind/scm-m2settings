@@ -44,14 +44,15 @@
         <properties>
             <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
 	    <!-- QA tiers do not drop the database or run Integration Tests -->
-            <jboss.hostname>localhost</jboss.hostname>
+            <jboss.hostname></jboss.hostname>
             <jboss.port></jboss.port>
             <jboss.home></jboss.home>
-            <jboss.server.name>localhost</jboss.server.name>
+            <jboss.server.name></jboss.server.name>
 	    <!-- lets tell mvn to copy dependencies to the target folder -->
             <appserver.lib.dir>${user.home}/tcgadcclib</appserver.lib.dir>
             <appserver.deploy.dir>${user.home}/tcgadcclib</appserver.deploy.dir>
 	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
+	    <database.connection.url>${db.connection.url}</database.connection.url>
                 <!-- Database :: Quartz Schema Properties -->
                 <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
                 <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
