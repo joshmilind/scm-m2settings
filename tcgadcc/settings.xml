@@ -42,13 +42,14 @@
             </property>
         </activation>
         <properties>
-            <!-- Application Server :: Properties used for only during "mvn clean install" -->
-			<!-- QA tiers do not drop the database or run Integration Tests -->
-            <jboss.hostname></jboss.hostname>
+            <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
+	    <!-- QA tiers do not drop the database or run Integration Tests -->
+            <jboss.hostname>localhost</jboss.hostname>
             <jboss.port></jboss.port>
             <jboss.home></jboss.home>
-            <jboss.server.name></jboss.server.name>
-            <appserver.lib.dir>${jboss.home}/server/${jboss.server.name}/lib</appserver.lib.dir>
+            <jboss.server.name>localhost</jboss.server.name>
+	    <!-- lets tell mvn to copy dependencies to the target folder -->
+            <appserver.lib.dir>./target/lib</appserver.lib.dir>
             <appserver.deploy.dir>${jboss.home}/server/${jboss.server.name}/deploy</appserver.deploy.dir>
 	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
             </properties>
