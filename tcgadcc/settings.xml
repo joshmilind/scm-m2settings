@@ -46,11 +46,11 @@
 	    <!-- QA tiers do not drop the database or run Integration Tests -->
             <jboss.hostname>localhost</jboss.hostname>
             <jboss.port>29080</jboss.port>
-            <jboss.home>${PWD}/JBOSS</jboss.home>
+            <jboss.home>${PWD}/JBOSS</jboss.home>	<!-- PWD = AnthillPro3 build directory -->
             <jboss.server.name>localhost</jboss.server.name>
 	    <!-- lets tell mvn to copy dependencies to the target folder -->
-            <appserver.lib.dir>${user.home}/tcgadcclib</appserver.lib.dir>
-            <appserver.deploy.dir>${user.home}/tcgadccdeploy</appserver.deploy.dir>
+            <appserver.lib.dir>${PWD}/tcgadcclib</appserver.lib.dir>	<!-- PWD = AnthillPro3 build directory -->
+            <appserver.deploy.dir></appserver.deploy.dir>
 	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
 	    <database.connection.url>${database.connection.url}</database.connection.url>
                 <!-- Database :: Quartz Schema Properties -->
