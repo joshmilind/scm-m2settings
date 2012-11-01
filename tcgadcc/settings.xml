@@ -53,15 +53,15 @@
             <appserver.deploy.dir></appserver.deploy.dir>
 	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
 	    <database.connection.url>${database.connection.url}</database.connection.url>
-                <!-- Database :: Quartz Schema Properties -->
-                <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
-                <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
-                <database.quartz.schema.password>${database.quartz.schema.password}</database.quartz.schema.password>
+            <!-- Database :: Quartz Schema Properties -->
+            <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
+            <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
+            <database.quartz.schema.password>${database.quartz.schema.password}</database.quartz.schema.password>
     
-                <!-- Database :: Common Schema Properties -->
-                <database.common.schema.defaultSchemaName>${database.common.schema.defaultSchemaName}</database.common.schema.defaultSchemaName>
-                <database.common.schema.username>${database.common.schema.username}</database.common.schema.username>
-                <database.common.schema.password>${database.common.schema.password}</database.common.schema.password>
+            <!-- Database :: Common Schema Properties -->
+            <database.common.schema.defaultSchemaName>${database.common.schema.defaultSchemaName}</database.common.schema.defaultSchemaName>
+            <database.common.schema.username>${database.common.schema.username}</database.common.schema.username>
+            <database.common.schema.password>${database.common.schema.password}</database.common.schema.password>
             </properties>
         <repositories>
             <repository>
