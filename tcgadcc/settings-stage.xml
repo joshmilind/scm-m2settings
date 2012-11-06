@@ -144,7 +144,7 @@
             <activeByDefault>false</activeByDefault>
             <property>
                 <name>env</name>
-                <value>prototype</value>
+                <value>stage</value>
             </property>
         </activation>
         <properties>
