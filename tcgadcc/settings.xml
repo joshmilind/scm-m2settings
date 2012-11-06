@@ -78,6 +78,7 @@
                 <releases>
                     <enabled>true</enabled>
                 </releases>
+	    <!-- for dev updatePolicy should be always and true -->
                 <snapshots>
                     <updatePolicy>never</updatePolicy>
                     <enabled>false</enabled>
