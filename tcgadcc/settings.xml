@@ -66,8 +66,8 @@
             <database.common.schema.password>${database.common.schema.password}</database.common.schema.password>
 
             <!--  <props.loc> [ Local Directory to host Config files ]</props.loc> -->
-            <local.email></local.email>
-            <tcga.files.basedir>${PWD}/tcgadcc2<</tcga.files.basedir> 
+            <local.email>rashmi.sanbhadti@nih.gov</local.email>
+            <tcga.files.basedir>${PWD}/tcgadcc2</tcga.files.basedir> 
             <solr.home.dir>${PWD}/tcgadcc2/solr</solr.home.dir>
 	    <!-- <solr.sync.interval>[ Interval in minutes to trigger solr data refresh ]</solr.sync.interval> -->
         </properties>
