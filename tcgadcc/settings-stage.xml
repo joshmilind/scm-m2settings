@@ -33,7 +33,7 @@
       </pluginRepositories>
     </profile>
     <profile>
-        <id>sra-qa</id>
+        <id>sra-qa1</id>
         <activation>
             <activeByDefault>false</activeByDefault>
             <property>
@@ -43,18 +43,18 @@
         </activation>
         <properties>
             <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
-	    <!-- QA tiers do not drop the database or run Integration Tests -->
-            <jboss.hostname>localhost</jboss.hostname>
+			<!-- QA tiers do not drop the database or run Integration Tests -->
+            <jboss.hostname>tcgav2-data-sqa1.nci.nih.gov</jboss.hostname>
             <jboss.port>29080</jboss.port>
             <jboss.home>${PWD}/JBOSS</jboss.home>	<!-- PWD = AnthillPro3 build directory -->
             <jboss.server.name>localhost</jboss.server.name>
 
-	    <!-- lets tell mvn to copy dependencies to the target folder -->
+			<!-- lets tell mvn to copy dependencies to the target folder -->
             <appserver.lib.dir>${PWD}/tcgadcclib</appserver.lib.dir>	<!-- PWD = AnthillPro3 build directory -->
             <appserver.deploy.dir></appserver.deploy.dir>
 
-	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
-	    <database.connection.url>${database.connection.url}</database.connection.url>
+			<database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
+			<database.connection.url>${database.connection.url}</database.connection.url>
             <!-- Database :: Quartz Schema Properties -->
             <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
             <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
@@ -68,8 +68,8 @@
             <!--  <props.loc> [ Local Directory to host Config files ]</props.loc> -->
             <local.email>rashmi.sanbhadti@nih.gov</local.email>
             <!-- <tcga.files.basedir></tcga.files.basedir> -->
-            <!-- <solr.home.dir></solr.home.dir> -->
-	    <!-- <solr.sync.interval>[ Interval in minutes to trigger solr data refresh ]</solr.sync.interval> -->
+            <solr.home.dir>/local/content/tcga/solr</solr.home.dir>
+			<solr.sync.interval>5</solr.sync.interval>
         </properties>
         <repositories>
             <repository>
@@ -78,6 +78,7 @@
                 <releases>
                     <enabled>true</enabled>
                 </releases>
+				<!-- for dev updatePolicy/enabled should be always and true -->
                 <snapshots>
                     <updatePolicy>never</updatePolicy>
                     <enabled>false</enabled>
@@ -96,18 +97,18 @@
         </activation>
         <properties>
             <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
-	    <!-- QA tiers do not drop the database or run Integration Tests -->
-            <jboss.hostname>localhost</jboss.hostname>
+			<!-- QA tiers do not drop the database or run Integration Tests -->
+            <jboss.hostname>tcgav2-data-sqa2.nci.nih.gov</jboss.hostname>
             <jboss.port>29080</jboss.port>
             <jboss.home>${PWD}/JBOSS</jboss.home>	<!-- PWD = AnthillPro3 build directory -->
             <jboss.server.name>localhost</jboss.server.name>
 
-	    <!-- lets tell mvn to copy dependencies to the target folder -->
+			<!-- lets tell mvn to copy dependencies to the target folder -->
             <appserver.lib.dir>${PWD}/tcgadcclib</appserver.lib.dir>	<!-- PWD = AnthillPro3 build directory -->
             <appserver.deploy.dir></appserver.deploy.dir>
 
-	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
-	    <database.connection.url>${database.connection.url}</database.connection.url>
+			<database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
+			<database.connection.url>${database.connection.url}</database.connection.url>
             <!-- Database :: Quartz Schema Properties -->
             <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
             <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
@@ -121,8 +122,8 @@
             <!--  <props.loc> [ Local Directory to host Config files ]</props.loc> -->
             <local.email>rashmi.sanbhadti@nih.gov</local.email>
             <!-- <tcga.files.basedir></tcga.files.basedir> -->
-            <!-- <solr.home.dir></solr.home.dir> -->
-	    <!-- <solr.sync.interval>[ Interval in minutes to trigger solr data refresh ]</solr.sync.interval> -->
+            <solr.home.dir>/local/content/tcga/solr</solr.home.dir>
+			<solr.sync.interval>5</solr.sync.interval>
         </properties>
         <repositories>
             <repository>
@@ -148,19 +149,19 @@
             </property>
         </activation>
         <properties>
-        <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
-	    <!-- QA tiers do not drop the database or run Integration Tests -->
+			<!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
+			<!-- QA tiers do not drop the database or run Integration Tests -->
             <jboss.hostname>localhost</jboss.hostname>
             <jboss.port>29080</jboss.port>
             <jboss.home>${PWD}/JBOSS</jboss.home>	<!-- PWD = AnthillPro3 build directory -->
             <jboss.server.name>localhost</jboss.server.name>
 
-	    <!-- lets tell mvn to copy dependencies to the target folder -->
+			<!-- lets tell mvn to copy dependencies to the target folder -->
             <appserver.lib.dir>${PWD}/tcgadcclib</appserver.lib.dir>	<!-- PWD = AnthillPro3 build directory -->
             <appserver.deploy.dir></appserver.deploy.dir>
 
-	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
-	    <database.connection.url>${database.connection.url}</database.connection.url>
+			<database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
+			<database.connection.url>${database.connection.url}</database.connection.url>
             <!-- Database :: Quartz Schema Properties -->
             <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
             <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
@@ -174,8 +175,8 @@
             <!--  <props.loc> [ Local Directory to host Config files ]</props.loc> -->
             <local.email>ludetc@mail.nih.gov</local.email>
             <!-- <tcga.files.basedir>${PWD}/tcgadcc2</tcga.files.basedir> -->
-            <!-- <solr.home.dir>${PWD}/tcgadcc2/solr</solr.home.dir> -->
-	    <!-- <solr.sync.interval>[ Interval in minutes to trigger solr data refresh ]</solr.sync.interval> -->
+            <solr.home.dir>/local/content/tcga/solr</solr.home.dir>
+			<solr.sync.interval>5</solr.sync.interval>
         </properties>
         <repositories>
             <repository>
@@ -192,7 +193,7 @@
         </repositories>
     </profile>
     <profile>
-        <id>Prototype</id>
+        <id>Prototype</id>		<!-- Also known as Preview -->
         <activation>
             <activeByDefault>false</activeByDefault>
             <property>
@@ -201,19 +202,19 @@
             </property>
         </activation>
         <properties>
-        <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
-	    <!-- QA tiers do not drop the database or run Integration Tests -->
-            <jboss.hostname>localhost</jboss.hostname>
+			<!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
+			<!-- QA tiers do not drop the database or run Integration Tests -->
+            <jboss.hostname>tcgav2-data-proto.nci.nih.gov</jboss.hostname>
             <jboss.port>29080</jboss.port>
             <jboss.home>${PWD}/JBOSS</jboss.home>	<!-- PWD = AnthillPro3 build directory -->
             <jboss.server.name>localhost</jboss.server.name>
 
-	    <!-- lets tell mvn to copy dependencies to the target folder -->
+			<!-- lets tell mvn to copy dependencies to the target folder -->
             <appserver.lib.dir>${PWD}/tcgadcclib</appserver.lib.dir>	<!-- PWD = AnthillPro3 build directory -->
             <appserver.deploy.dir></appserver.deploy.dir>
 
-	    <database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
-	    <database.connection.url>${database.connection.url}</database.connection.url>
+			<database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
+			<database.connection.url>${database.connection.url}</database.connection.url>
             <!-- Database :: Quartz Schema Properties -->
             <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
             <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
@@ -227,8 +228,8 @@
             <!--  <props.loc> [ Local Directory to host Config files ]</props.loc> -->
             <local.email>todd.pihl@nih.gov</local.email>
             <!-- <tcga.files.basedir></tcga.files.basedir> -->
-            <!-- <solr.home.dir></solr.home.dir> -->
-	    <!-- <solr.sync.interval>[ Interval in minutes to trigger solr data refresh ]</solr.sync.interval> -->
+            <solr.home.dir>/local/content/tcga/solr</solr.home.dir>
+			<solr.sync.interval>5</solr.sync.interval>
         </properties>
         <repositories>
             <repository>
@@ -245,6 +246,59 @@
         </repositories>
     </profile>
   </profiles>
+    <profile>
+        <id>iqa</id>		<!-- Also known as Preview -->
+        <activation>
+            <activeByDefault>false</activeByDefault>
+            <property>
+                <name>env</name>
+                <value>qa</value>
+            </property>
+        </activation>
+        <properties>
+			<!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
+			<!-- QA tiers do not drop the database or run Integration Tests -->
+            <jboss.hostname>tcgav2-data-iqa.nci.nih.gov</jboss.hostname>
+            <jboss.port>29080</jboss.port>
+            <jboss.home>${PWD}/JBOSS</jboss.home>	<!-- PWD = AnthillPro3 build directory -->
+            <jboss.server.name>localhost</jboss.server.name>
+
+			<!-- lets tell mvn to copy dependencies to the target folder -->
+            <appserver.lib.dir>${PWD}/tcgadcclib</appserver.lib.dir>	<!-- PWD = AnthillPro3 build directory -->
+            <appserver.deploy.dir></appserver.deploy.dir>
+
+			<database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
+			<database.connection.url>${database.connection.url}</database.connection.url>
+            <!-- Database :: Quartz Schema Properties -->
+            <database.quartz.schema.defaultSchemaName>${database.quartz.schema.defaultSchemaName}</database.quartz.schema.defaultSchemaName>
+            <database.quartz.schema.username>${database.quartz.schema.username}</database.quartz.schema.username>
+            <database.quartz.schema.password>${database.quartz.schema.password}</database.quartz.schema.password>
+    
+            <!-- Database :: Common Schema Properties -->
+            <database.common.schema.defaultSchemaName>${database.common.schema.defaultSchemaName}</database.common.schema.defaultSchemaName>
+            <database.common.schema.username>${database.common.schema.username}</database.common.schema.username>
+            <database.common.schema.password>${database.common.schema.password}</database.common.schema.password>
+
+            <!--  <props.loc> [ Local Directory to host Config files ]</props.loc> -->
+            <local.email>silbermansr@mail.nih.gov</local.email>
+            <!-- <tcga.files.basedir></tcga.files.basedir> -->
+            <solr.home.dir>/local/content/tcga/solr</solr.home.dir>
+			<solr.sync.interval>5</solr.sync.interval>
+        </properties>
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://central</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <updatePolicy>never</updatePolicy>
+                    <enabled>false</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+    </profile>
   <activeProfiles>
     <!-- make the profile active all the time -->
     <activeProfile>nexus</activeProfile>
