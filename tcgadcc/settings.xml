@@ -105,7 +105,7 @@
 
 			<!-- lets tell mvn to copy dependencies to the target folder -->
             <appserver.lib.dir>${PWD}/tcgadcclib</appserver.lib.dir>	<!-- PWD = AnthillPro3 build directory -->
-            <appserver.deploy.dir>${PWD}/JBOSS/deploy</appserver.deploy.dir>
+            <appserver.deploy.dir>${PWD}/JBOSS/server/localhost/deploy</appserver.deploy.dir>
 
 			<database.driver.class>oracle.jdbc.driver.OracleDriver</database.driver.class>
 			<database.connection.url>${database.connection.url}</database.connection.url>
