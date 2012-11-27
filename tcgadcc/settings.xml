@@ -144,6 +144,10 @@
         <id>Integration</id>
         <activation>
             <activeByDefault>false</activeByDefault>
+            <property>
+                <name>tier</name>
+                <value>Integration</value>
+            </property>
         </activation>
         <properties>
             <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
