@@ -44,7 +44,8 @@
         <properties>
             <!-- Application Server :: Properties used for only during "mvn clean install or dependency:copy-dependencies" -->
 			<!-- QA tiers do not drop the database or run Integration Tests -->
-            <jboss.hostname>tcgav2-data-sqa2.nci.nih.gov</jboss.hostname>
+			<!-- jboss.hostname to be provided on with Maven options -->
+            <!-- <jboss.hostname></jboss.hostname> -->
             <jboss.port>29080</jboss.port>
             <jboss.home>${PWD}/JBOSS</jboss.home>	<!-- PWD = AnthillPro3 build directory -->
             <jboss.server.name>localhost</jboss.server.name>
