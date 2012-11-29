@@ -122,7 +122,7 @@
             <!--  <props.loc> [ Local Directory to host Config files ]</props.loc> -->
             <local.email>ludetc@mail.nih.gov</local.email>
             <!-- <tcga.files.basedir></tcga.files.basedir> -->
-            <!-- <solr.home.dir>/local/content/tcga/solr</solr.home.dir> -->
+            <solr.home.dir>/local/content/tcga/solr</solr.home.dir>
 			<solr.sync.interval>5</solr.sync.interval>
         </properties>
         <repositories>
