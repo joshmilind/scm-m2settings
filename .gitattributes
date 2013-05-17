@@ -1,5 +1,6 @@
 * text=auto !eol
 coppa/settings.xml -text
+ctd2dashboard/settings.xml -text
 firebird/settings-qa.xml -text
 firebird/settings-stage.xml -text
 firebird/settings.xml -text
