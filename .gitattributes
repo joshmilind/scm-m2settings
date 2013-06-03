@@ -8,7 +8,6 @@ mfhp/settings-stage.xml -text
 mfhp/settings.xml -text
 nciscm/ncimvn-dev-settings-qa-releases.xml -text
 nciscm/settings.xml -text
-tcga-sandbox/settings.xml -text
 tcga/settings.xml -text
 tcgadcc/settings-stage.xml -text
 tcgadcc/settings.xml -text
