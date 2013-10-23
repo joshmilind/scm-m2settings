@@ -180,6 +180,11 @@
 			<platformdesigns.centerDesc><![CDATA[provides the Center Name (domain) for the center that is submitting data for a particular platform. A <a href="http://tcga-data-prod.nci.nih.gov/tcga/AllTCGACenters.htm">report</a> is available that provides a relationship between Center Name (domain), Center Type, Center Display Name, and BCR Center ID (Data Generating Center).]]></platformdesigns.centerDesc>
 			<platformdesigns.codeDesc><![CDATA[<provides the code used in TCGA to represent a platform. The code is used in archive and file names and file contents. A <a href="http://tcga-data-prod.nci.nih.gov/tcga/AllTCGAPlatforms.htm">report</a> is available that provides the relationship between TCGA Platform Code and Platform Name.]]></platformdesigns.codeDesc>
 			<platformdesigns.nameDesc><![CDATA[<provides the vendor's name of a particular platform. The Platform Name links to the best approximation of a direct link to the platform's main information page. On the venor's page you may find links to the vendor's annotation files and other supporting materials. The DCC does not collect or track vendor annotations. If you have trouble finding the vendor's supporting materials, we reccomend you contact the vendor directly. A <a href="http://tcga-data-prod.nci.nih.gov/tcga/AllTCGAPlatforms.htm">report</a> is available that provides the relationship between TCGA Platform Code and Platform Name.]]></platformdesigns.nameDesc>
+			<tcga.portal.downloadLinkSite>https://tcga-data-prod.nci.nih.gov</tcga.portal.downloadLinkSite>
+			<tcga.portal.WSStatusCheckUrlBase>http://tcga-data-prod.nci.nih.gov</tcga.portal.WSStatusCheckUrlBase>
+			<tcga.portal.jobStatusUrl>https://tcga-data-prod.nci.nih.gov</tcga.portal.jobStatusUrl>
+			<tcga.datareports.server.httpColonSlashSlashHostnameAndPort>https://tcga-data-prod.nci.nih.gov</tcga.datareports.server.httpColonSlashSlashHostnameAndPort>
+			<tcga.dcc.bcr.validXsdDomainPattern>tcga-data-prod\\.nci\\.nih\\.gov</tcga.dcc.bcr.validXsdDomainPattern>
 		</properties>
         <repositories>
             <repository>
