@@ -1,5 +1,4 @@
 * text=auto !eol
-Greensheets-Form-Builder/settings.xml -text
 URI_Resolver/settings.xml -text
 coppa/settings.xml -text
 ctd2dashboard/settings.xml -text
@@ -7,6 +6,7 @@ dtp_sarcoma/settings.xml -text
 firebird/settings-qa.xml -text
 firebird/settings-stage.xml -text
 firebird/settings.xml -text
+greensheets/settings.xml -text
 lexevs-service/settings.xml -text
 mfhp/settings-stage.xml -text
 mfhp/settings.xml -text
