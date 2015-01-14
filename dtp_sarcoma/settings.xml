@@ -5,7 +5,7 @@
     <mirror>
       <!-- This sends everything else to /public -->
       <id>nexus</id>
-      <mirrorOf>*</mirrorOf>
+      <mirrorOf>external:*</mirrorOf>
       <url>https://ncimvn.nci.nih.gov/nexus/content/groups/public</url>
     </mirror>
   </mirrors>
