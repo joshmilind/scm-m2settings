@@ -5,6 +5,8 @@
     <mirror>
       <!-- This sends everything else to /public -->
       <id>nexus</id>
+      <!-- NOTE - if this project uses local file system repositories, then change the value of the following line to 'external:*' 
+      for more information, see: http://maven.apache.org/guides/mini/guide-mirror-settings.html -->
       <mirrorOf>*</mirrorOf>
       <url>https://ncimvn.nci.nih.gov/nexus/content/groups/public</url>
     </mirror>
