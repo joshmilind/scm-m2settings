@@ -43,12 +43,81 @@
             </pluginRepositories>
         </profile>
         <profile>
-            <id>dcc15-dev</id>
+            <id>scm-dev</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
                 <property>
-                    <name>env</name>
+                    <name>dcc.deployment.profile</name>
                     <value>dev</value>
+                </property>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <updatePolicy>always</updatePolicy>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>scm-qa</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <property>
+                    <name>dcc.deployment.profile</name>
+                    <value>qa</value>
+                </property>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <updatePolicy>always</updatePolicy>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>scm-stage</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <property>
+                    <name>dcc.deployment.profile</name>
+                    <value>stage</value>
+                </property>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>http://central</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <updatePolicy>always</updatePolicy>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>scm-prod</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+                <property>
+                    <name>dcc.deployment.profile</name>
+                    <value>prod</value>
                 </property>
             </activation>
             <repositories>
