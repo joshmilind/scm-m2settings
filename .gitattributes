@@ -16,3 +16,5 @@ nciscm/settings.xml -text
 tcga/settings.xml -text
 tcgadcc/settings.xml -text
 template/settings.xml -text
+test/ncimvn-dev-settings-qa-releases.xml -text
+test/settings.xml -text
