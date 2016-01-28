@@ -18,6 +18,7 @@ tcgadcc/settings.xml -text
 template/settings.xml -text
 test/ncimvn-dev-settings-qa-releases.xml -text
 test/pom.xml -text
+test/settings-dcc.xml -text
 test/settings.xml -text
 test/settings.xml_ctd2 -text
 test/settings_nciscm.xml -text
