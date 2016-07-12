@@ -1,5 +1,6 @@
 * text=auto !eol
 URI_Resolver/settings.xml -text
+cadsrformbuilder/settings.xml -text
 coppa/settings.xml -text
 ctd2dashboard/settings.xml -text
 dcc/settings.xml -text
